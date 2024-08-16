@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Aaron Jay</title>
+     <link rel="shortcut icon" type="image" href="images/logo.png">
+     <link rel="stylesheet" href="style index.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+
+     <script>
+
+                document.addEventListener("DOMContentLoaded", function(){
+                    document.querySelector("#name").addEventListener('keyup', function(){
+                        var name = document.getElementById("name");
+                        document.getElementById("user").innerHTML = `${name.value}`;
+                    });
+                    document.querySelector("#Start").addEventListener('click', function(){
+                        document.getElementById("myForm").reset();
+                    })
+                });
+
+     </script>
+ </head>
+ <body>
+     <div class="hero">
+         <nav>
+             <h2><a href="index.html"><img src="images/Page Logo.png" class="logo"></a></h2>
+             <ul>
+                 <li><a href="about-me.html">ABOUT ME</a></li>
+                 <li><a href="my-portfolio-photoshop.html">PORTFOLIO</a></li>
+                 <li><a href="skill.html">SKILLS</a></li>
+                 <li><a href="contact.html">CONTACT</a></li>
+             </ul>
+             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn" style="opacity: 0;">SECRET</a>
+         </nav>
+         <hr>
+
+     </div>
+
+     <div class="content">
+         <h4>Hello, <span id="user"></span> my name is</h4>
+         <h1>Aaron Jay <span>Gabato</span></h1>
+         <h3>Soon to be <span>Developer</span></h3> 
+         <div class="userName">
+             <form autocomplete="off" id="myForm">
+                 <input type="text" name="uname" placeholder="Enter Your Name" autocomplete="off" id="name" autofocus>
+                 <button type="button" name="submit" id="Start">Submit</button>
+             </form>
+         </div>
+     </div>
+
+     <div class="share">
+         <p class="neon">Let's Connect</p>
+
+         <div class="social">
+             <a href="https://www.facebook.com/gabato.aaron30"><i class="fab fa-facebook-f"></i></a>
+             <a href="https://www.instagram.com/aaaaarondalla/"><i class="fab fa-instagram"></i></a>
+             <a href="https://twitter.com/Im_Waddles"><i class="fab fa-twitter"></i></i></a>
+
+         </div>
+     </div>
+     
+ </body>
+ </html>

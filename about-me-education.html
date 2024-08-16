@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Education</title>
+        <link rel="shortcut icon" type="image" href="images/logo.png">
+        <link rel="stylesheet" href="style about-education.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <a href="index.html"><img src="images/Page Logo.png" class="logo"></a>
+                <ul>
+                    <li><a href="about-me.html" class= "current">ABOUT ME</a></li>
+                    <li><a href="my-portfolio-photoshop.html">PORTFOLIO</a></li>
+                    <li><a href="skill.html">SKILLS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn" style="opacity: 0;">SECRET</a>
+            </nav>
+           
+            <hr>
+        
+            <div class="box">
+                <h5 id="schoolname"></h5>
+                    <div class="pra">
+                        <p id="schooldesc"></p>
+                    </div> 
+                </div>
+
+            <div class="background">
+                <img id="imgsrc" src="images/School/MCS.jpg">
+                <ul class="navigation">
+                    <li onclick="imgUrl('images/School/MCS.jpg')"><img src="images/School/MCS.jpg"></li>
+                    <li onclick="imgUrl('images/School/MNHS Jr.jpg')"><img src="images/School/MNHS Jr.jpg" ></li>
+                    <li onclick="imgUrl('images/School/MNHS Sr.jpg')"><img src="images/School/MNHS Sr.jpg"></li>
+                    <li onclick="imgUrl('images/School/CLSU.jpg')"><img src="images/School/CLSU.jpg"></li>
+                </ul>
+            </div>
+
+            
+            <script type="text/javascript">
+                function imgUrl(sourceImg)
+                {
+                    const visible = document.querySelector(".box");
+                    document.getElementById("imgsrc").src = sourceImg;
+                    
+                    if(sourceImg == "images/School/MCS.jpg")
+                    {
+                        document.getElementById("schoolname").innerHTML = "Munoz Central School";
+                        document.getElementById("schooldesc").innerHTML = "This is my school when I was elementary and also pre-elementary";
+                    }
+                    else if(sourceImg == "images/School/MNHS Jr.jpg")
+                    {
+                        document.getElementById("schoolname").innerHTML = "Munoz National HighSchool Junior - MAIN";
+                        document.getElementById("schooldesc").innerHTML = "This is my school when I was Junior High School";
+                    }
+                    else if(sourceImg == "images/School/MNHS Sr.jpg")
+                    {
+                        document.getElementById("schoolname").innerHTML = "Munoz National HighSchool Senior - MAIN";
+                        document.getElementById("schooldesc").innerHTML = "This is my school when I was Senior High School";
+                    }
+                    else if(sourceImg == "images/School/CLSU.jpg")
+                    {
+                        document.getElementById("schoolname").innerHTML = "Central Luzon State University";
+                        document.getElementById("schooldesc").innerHTML = "This is where I'm currently enrolled and where I learned how to code and fell in love with it";
+                    }
+                }
+
+            </script>
+            
+            
+        </div>
+            
+        
+
+
+    </body>
+</html>
